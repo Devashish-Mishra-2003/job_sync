@@ -1,0 +1,4 @@
+Chhavi Sharma
+Email: chhavi@example.com
+Location: Hyderabad
+Skills: Python, Flask, React, SQL, TensorFlow, Docker, AWS

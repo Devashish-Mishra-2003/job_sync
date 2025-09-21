@@ -1,0 +1,32 @@
+name: resume_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - libffi
+  - vs2015_runtime
+  - streamlit
+  - fastapi
+  - uvicorn
+  - python-multipart
+  - requests
+  - numpy
+  - pandas
+  - scikit-learn
+  - spacy
+  - python-docx
+  - pdf2image
+  - poppler
+  - pytesseract
+  - fuzzywuzzy
+  - python-levenshtein
+  - faiss-cpu
+  - pypdf
+  - transformers
+  - huggingface_hub
+  - tiktoken
+  - pip:
+      - pdfplumber
+      - openai

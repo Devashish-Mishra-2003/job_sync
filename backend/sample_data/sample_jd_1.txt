@@ -1,0 +1,2 @@
+Job Title: Full Stack Developer (AI/ML focus)
+Skills: Python, Flask, React, SQL, Docker, AWS, TensorFlow, Kubernetes

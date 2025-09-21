@@ -1,0 +1,14 @@
+streamlit
+fastapi
+uvicorn[standard]
+python-multipart
+requests
+numpy
+pandas
+scikit-learn
+spacy
+python-docx
+pdfplumber
+fuzzywuzzy
+python-Levenshtein
+openai
