@@ -48,7 +48,7 @@ It consists of two main components:
 - Parsing: pdfplumber, python-docx 📄  
 - Other Dependencies: requests, numpy, uvicorn, python-multipart  
 - Hosting:  
-  - 🌐 Frontend → Vercel / Streamlit Cloud  
+  - 🌐 Frontend → Streamlit Cloud  
   - ⚙️ Backend → Render  
 
 ---
