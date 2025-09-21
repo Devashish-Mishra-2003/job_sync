@@ -10,7 +10,7 @@ st.set_page_config(page_title="JobSync", layout="wide")
 # ---------------- Sidebar ----------------
 st.sidebar.header("Settings")
 
-DEFAULT_BACKEND = os.getenv("BACKEND_URL", "http://localhost:8000")
+DEFAULT_BACKEND = os.getenv("BACKEND_URL", "https://jobsync-backend-kw2x.onrender.com")
 backend_url = st.sidebar.text_input("Backend URL", value=DEFAULT_BACKEND)
 
 role = st.sidebar.selectbox("Role", ["Student", "Placement Team"])
