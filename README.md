@@ -69,12 +69,12 @@ Getting Started Locally
 
 To run JobSync locally, make sure you have Python + conda installed.  
 
-1.Clone the Repository  
+1. Clone the Repository  
 ```bash
 git clone https://github.com/Devashish-Mishra-2003/job_sync.git
 cd job_sync 
 ```
-2️.Set up Environment
+2️. Set up Environment
 
 ```bash
 conda create -n resume_env python=3.10
@@ -82,13 +82,13 @@ conda activate resume_env
 pip install -r requirements.txt
 ```
 
-3️.Run the Backend
+3️. Run the Backend
 
 ```bash
 uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-4️.Run the Frontend
+4️. Run the Frontend
 
 ```bash
 streamlit run app.py
