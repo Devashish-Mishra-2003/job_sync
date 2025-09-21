@@ -1,37 +1,37 @@
-# 🚀 JobSync  
+# JobSync  
 
 **JobSync** is an **AI-powered platform** designed to streamline and enhance the **job application process** for both **students** and **placement teams**.  
 It provides **instant, data-driven feedback** on resume-to-job-description compatibility — turning a historically manual and opaque process into an **efficient and transparent experience**.  
 
-🔗 [👉 Try it Live Here!](https://jobsync-horizon.streamlit.app/)  
+🔗 [Try it Live Here!](https://jobsync-horizon.streamlit.app/)  
 
 ---
 
-🏆 About the Project  
+About the Project  
 This project was built for the **Code 5 Edu-Tech Hackathon** as a solution for **Theme 2**.  
 
 ---
 
-⚙️ How It Works  
+How It Works  
 
 JobSync is built on a **modern, decoupled architecture**, making it scalable and reliable.  
 It consists of two main components:  
 
-🎨 Frontend (Streamlit)  
+Frontend (Streamlit)  
 - User-friendly interface for students and placement teams  
 - Students can upload resumes and get instant compatibility feedback  
 - Placement teams get a dashboard to manage job descriptions and evaluate candidates  
 
-⚡ Backend (FastAPI)  
+Backend (FastAPI)  
 - High-performance API for all the heavy lifting  
 - Handles resume & JD parsing, compatibility scoring, and detailed feedback  
 - Independent deployment for smooth scalability  
 
-👉 Decoupled Deployment: A surge in frontend traffic won’t slow down backend evaluations 🚀  
+Decoupled Deployment: A surge in frontend traffic won’t slow down backend evaluations 🚀  
 
 ---
 
-✨ Key Features  
+Key Features  
 
 - ✅ Instant Resume Evaluation → Compatibility score + verdict (High, Medium, Low)  
 - ✅ Actionable Feedback → Concrete suggestions to improve resumes (skills, projects, etc.)  
@@ -41,19 +41,19 @@ It consists of two main components:
 
 ---
 
-🛠 Tech Stack  
+Tech Stack  
 
-- Frontend: Streamlit 🎨  
-- Backend: FastAPI ⚡  
-- Parsing: pdfplumber, python-docx 📄  
+- Frontend: Streamlit   
+- Backend: FastAPI 
+- Parsing: pdfplumber, python-docx   
 - Other Dependencies: requests, numpy, uvicorn, python-multipart  
 - Hosting:  
-  - 🌐 Frontend → Streamlit Cloud  
-  - ⚙️ Backend → Render  
+  - Frontend → Streamlit Cloud  
+  - Backend → Render  
 
 ---
 
-🚀 Deployment Strategy  
+Deployment Strategy  
 
 - Backend (FastAPI):  
   - Deployed on Render using `render.yaml` blueprint  
@@ -65,16 +65,16 @@ It consists of two main components:
 
 ---
 
-💻 Getting Started Locally  
+Getting Started Locally  
 
 To run JobSync locally, make sure you have Python + conda installed.  
 
-1️⃣ Clone the Repository  
+1.Clone the Repository  
 ```bash
 git clone https://github.com/Devashish-Mishra-2003/job_sync.git
 cd job_sync 
 ```
-2️⃣ Set up Environment
+2️.Set up Environment
 
 ```bash
 conda create -n resume_env python=3.10
@@ -82,30 +82,30 @@ conda activate resume_env
 pip install -r requirements.txt
 ```
 
-3️⃣ Run the Backend
+3️.Run the Backend
 
 ```bash
 uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-4️⃣ Run the Frontend
+4️.Run the Frontend
 
 ```bash
 streamlit run app.py
 ```
 
-🎉 Your app will now be available in your browser — ready to use!
+Your app will now be available in your browser — ready to use!
 
-📌 Future Enhancements
+Future Enhancements
 
--   🚀 AI-powered semantic matching with embeddings/LLMs
+-   AI-powered semantic matching with embeddings/LLMs
 
--  📊 Advanced analytics dashboard for placement teams
+-  Advanced analytics dashboard for placement teams
 
--  🤝 Collaboration tools for students & recruiters
+-  Collaboration tools for students & recruiters
 
 
-👨‍💻 Author
+Author
 
 Devashish Mishra
 
