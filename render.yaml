@@ -2,13 +2,13 @@ services:
   - type: web
     name: jobsync-backend
     env: python
-    python_version: 3.10.13
+    pythonVersion: 3.10.13          
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
-    env_vars:
+    envVars:                    
       - key: BACKEND_URL
         value: "https://jobsync-backend.onrender.com"
       - key: OPENAI_API_KEY
-        sync: false
+        sync: false                 
 
