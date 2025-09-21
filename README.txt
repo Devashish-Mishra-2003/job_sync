@@ -72,39 +72,41 @@ To run JobSync locally, make sure you have Python + conda installed.
 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/Devashish-Mishra-2003/job_sync.git
-cd job_sync
+cd job_sync 
+```
 2️⃣ Set up Environment
 
 ```bash
-Copy code
 conda create -n resume_env python=3.10
 conda activate resume_env
 pip install -r requirements.txt
+```
 
 3️⃣ Run the Backend
 
 ```bash
-Copy code
 uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+```
 
 4️⃣ Run the Frontend
 
 ```bash
-Copy code
 streamlit run app.py
+```
+
 🎉 Your app will now be available in your browser — ready to use!
 
 📌 Future Enhancements
 
-🚀 AI-powered semantic matching with embeddings/LLMs
+-   🚀 AI-powered semantic matching with embeddings/LLMs
 
-📊 Advanced analytics dashboard for placement teams
+-  📊 Advanced analytics dashboard for placement teams
 
-🤝 Collaboration tools for students & recruiters
+-  🤝 Collaboration tools for students & recruiters
+
 
 👨‍💻 Author
 
 Devashish Mishra
 
-🛠 Tech Stack: Full-Stack Development | AI/ML | Python
-💡 Passionate about building scalable AI-powered solutions
+
