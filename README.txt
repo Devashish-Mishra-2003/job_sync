@@ -1,68 +1,94 @@
-JobSync
-JobSync is an AI-powered platform designed to streamline and enhance the job application process for both students and placement teams. It provides instant, data-driven feedback on resume-to-job-description compatibility, turning a historically manual and opaque process into an efficient and transparent one.
+# 🚀 JobSync  
 
-This project was built for the Code 5 Edu-Tech Hackathon as a solution for Theme 2.
+**JobSync** is an **AI-powered platform** designed to streamline and enhance the **job application process** for both **students** and **placement teams**.  
+It provides **instant, data-driven feedback** on resume-to-job-description compatibility — turning a historically manual and opaque process into an **efficient and transparent experience**.  
 
-How It Works
-JobSync is built on a modern, decoupled architecture, a key feature that makes it highly scalable and reliable. The application is split into two main components:
+🔗 **[👉 Try it Live Here!](https://jobsync-horizon.streamlit.app/)**  
 
-Frontend (Streamlit): A user-friendly interface that handles all user interactions. It allows students to upload their resumes and get instant feedback, while giving placement teams a dashboard to manage job descriptions and evaluate candidates.
+---
 
-Backend (FastAPI): A high-performance API that handles all the heavy lifting. This includes parsing resumes and job descriptions, calculating compatibility scores using intelligent heuristics, and providing detailed feedback.
+## 🏆 About the Project  
+This project was built for the **Code 5 Edu-Tech Hackathon** as a solution for **Theme 2**.  
 
-These two services are deployed independently, allowing them to scale separately to meet demand. For instance, a surge in user visits on the frontend won't impact the backend's performance during heavy evaluation tasks.
+---
 
-Key Features
-Instant Resume Evaluation: Students receive an immediate compatibility score and verdict (High, Medium, or Low) after uploading their resume.
+## ⚙️ How It Works  
 
-Actionable Feedback: The app provides concrete, personalized suggestions on how to improve a resume for a specific job, including missing skills and project ideas.
+JobSync is built on a **modern, decoupled architecture**, making it **scalable** and **reliable**.  
+It consists of two main components:  
 
-Placement Team Dashboard: A centralized dashboard allows recruiters to upload job descriptions, view all candidate evaluations in one place, and filter results by score and location.
+### 🎨 Frontend (Streamlit)  
+- User-friendly interface for **students** and **placement teams**  
+- Students can **upload resumes** and get **instant compatibility feedback**  
+- Placement teams get a **dashboard** to manage job descriptions and evaluate candidates  
 
-Scalable Architecture: The decoupled setup with a Streamlit frontend and FastAPI backend ensures the application can handle a large number of users and evaluations without compromising on performance.
+### ⚡ Backend (FastAPI)  
+- High-performance API for all the **heavy lifting**  
+- Handles resume & JD parsing, compatibility scoring, and detailed feedback  
+- Independent deployment for smooth scalability  
 
-AI-Ready: The application's foundation is built to easily integrate advanced AI features, such as LLM-powered semantic analysis for even more nuanced feedback and matching in the future.
+👉 **Decoupled Deployment:** A surge in frontend traffic won’t slow down backend evaluations 🚀  
 
-Tech Stack
-Frontend: Streamlit
+---
 
-Backend: FastAPI
+## ✨ Key Features  
 
-Parsing: pdfplumber, python-docx
+✅ **Instant Resume Evaluation** – Get compatibility score + verdict (**High, Medium, Low**) instantly  
+✅ **Actionable Feedback** – Concrete suggestions to improve resumes (skills, projects, etc.)  
+✅ **Placement Team Dashboard** – Upload JDs, evaluate candidates, filter & export results  
+✅ **Scalable Architecture** – Independent scaling of backend & frontend services  
+✅ **AI-Ready** – Future integration with **LLM-powered semantic analysis** for deeper matching  
 
-Dependencies: requests, numpy, uvicorn, python-multipart
+---
 
-Hosting: StreamlitCloud (Frontend) and Render (Backend)
+## 🛠 Tech Stack  
 
-Deployment
-The application uses a modern, two-part deployment strategy for maximum efficiency.
+- **Frontend:** Streamlit 🎨  
+- **Backend:** FastAPI ⚡  
+- **Parsing:** pdfplumber, python-docx 📄  
+- **Other Dependencies:** requests, numpy, uvicorn, python-multipart  
+- **Hosting:**  
+  - 🌐 Frontend → **Vercel / Streamlit Cloud**  
+  - ⚙️ Backend → **Render**  
 
-Backend: The FastAPI service is deployed on Render using a render.yaml blueprint. The service automatically scales to handle incoming API requests.
+---
 
-Frontend: The Streamlit application is deployed on Vercel, connecting to the live backend using an environment variable (BACKEND_URL).
+## 📐 System Architecture  
 
-Getting Started Locally
-To run this application on your local machine, you'll need Python and conda.
+![Architecture Diagram](assets/architecture.png)  
 
-Clone the repository:
+*(Example: Streamlit frontend ↔ FastAPI backend ↔ Resume/Job Data Parsing & Scoring Modules)*  
 
-git clone [https://github.com/Devashish-Mishra-2003/job_sync.git](https://github.com/Devashish-Mishra-2003/job_sync.git)
+---
+
+## 🖼 Screenshots  
+
+### 🔹 Student View  
+![Student Dashboard](assets/student_dashboard.png)  
+
+### 🔹 Placement Team Dashboard  
+![Placement Dashboard](assets/placement_dashboard.png)  
+
+---
+
+## 🚀 Deployment Strategy  
+
+- **Backend (FastAPI):**  
+  - Deployed on **Render** using `render.yaml` blueprint  
+  - Auto-scales to handle incoming requests  
+
+- **Frontend (Streamlit):**  
+  - Deployed on **Vercel** / Streamlit Cloud  
+  - Connects to live backend using environment variable `BACKEND_URL`  
+
+---
+
+## 💻 Getting Started Locally  
+
+To run JobSync locally, make sure you have **Python** + **conda** installed.  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/Devashish-Mishra-2003/job_sync.git
 cd job_sync
 
-Set up the environment:
-
-conda create -n resume_env python=3.10
-conda activate resume_env
-pip install -r requirements.txt
-
-Run the backend:
-Open a new terminal and run the backend server.
-
-uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
-
-Run the frontend:
-Open another terminal and run the Streamlit application.
-
-streamlit run app.py
-
-Your app will now be available in your web browser, ready to use!
