@@ -53,6 +53,12 @@ Decoupled Deployment: A surge in frontend traffic won’t slow down backend eval
 
 ---
 
+**Demo Video**
+
+https://youtu.be/7uriBW7_CN0
+
+---
+
 **Deployment Strategy**  
 
 - **Backend (FastAPI):**  
